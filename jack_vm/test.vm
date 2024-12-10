@@ -1,0 +1,23 @@
+function sum 0
+	push argument 0
+	push constant 0
+	eq
+	if-goto basecase
+
+	push argument 0
+	push constant 1
+	sub
+	call sum 1
+	push argument 0
+	add
+	return
+
+	label basecase
+	push constant 0
+	return
+
+function Sys.init 0
+	push constant 100
+	call sum 1
+	label WHILE
+	goto WHILE

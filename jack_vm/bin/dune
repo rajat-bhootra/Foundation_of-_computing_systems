@@ -1,0 +1,4 @@
+(executable
+ (public_name jack_vm)
+ (name main)
+ (libraries jack_vm))

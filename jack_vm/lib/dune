@@ -1,0 +1,4 @@
+(library
+ (name jack_vm)
+ (modules ast parser translate))
+
